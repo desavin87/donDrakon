@@ -69,3 +69,28 @@
 		}
 	}
 }
+
+//Жирность шрифта
+@mixin fontWeight {
+	font-weight: 700;
+}
+
+//Плавный ховер эффект - линия
+@mixin hoverEffectParent {
+	transform: scaleX(1);
+	transform-origin: left;
+	transition: transform 0.25s;
+}
+
+@mixin hoverEffectLink {
+	content: '';
+	width: 100%;
+	height: 1px;
+	background-color: #FFFFFF;
+	position: absolute;
+	left: 0; 
+	bottom: -5px;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform 0.25s;
+}
